@@ -20,9 +20,11 @@
 - Gitlab cho phép đọc hoặc ghi vào repository và các branches.
 - Để cấp quyền cho những người được phép commit và pushing code, gitlad đã tạo ra protected branches.
 - Một protected branch gồm 3 điều cơ bản sau:
-+ Ngăn chặn việc push từ tất cả mọi người trừ user và master.
-+ Ngăn chặn việc push code lên branch từ những người không có quyền truy cập.
-+ Ngăn chặn bất kỳ ai thực hiện xóa branch.
+<ul>
+<li>Ngăn chặn việc push từ tất cả mọi người trừ user và master.</li>
+<li>Ngăn chặn việc push code lên branch từ những người không có quyền truy cập.</li>
+<li>Ngăn chặn bất kỳ ai thực hiện xóa branch.</li>
+</ul>
 - Bạn có thể tạo bất kỳ branch từ một protected branch. Gitlad mặc định master branch là protected branch.
 - Để bảo mật một branch, user cần có ít nhất một quyền cho phép từ master branch.
 
