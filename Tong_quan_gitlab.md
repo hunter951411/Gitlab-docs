@@ -53,3 +53,4 @@
 
 ###Components
 
+component.png
