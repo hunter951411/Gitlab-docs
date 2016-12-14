@@ -3,7 +3,7 @@
 ##Tài liệu hướng dẫn sử dụng
 ###Account Security
 ###API
-###CI/CD GitLab Continuous Integration (CI) and Continuous Delivery (CD) getting started, .gitlab-ci.yml options, and examples.
+###CI/CD
 ###GitLab as OAuth2 authentication service provider.
 ###Container Registry
 ###GitLab basics
