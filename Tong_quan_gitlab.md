@@ -53,4 +53,4 @@
 
 ###Components
 
-component.png
+<img src="https://github.com/hunter951411/gitlab/blob/master/component.png">
