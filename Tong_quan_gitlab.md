@@ -51,32 +51,3 @@
 
 ###Components
 
-t9.png
-
-##3. Cài đặt
-
-###Một máy chủ để cài đặt GitLab:
-- Ubuntu >= 12.03 64-bit
-- Một CPU có một hoặc 2 nhân
-- RAM: 1GB hoặc 2GB
-- Cần kết nối internet
-
-###Các bước cài đặt:
-- Bước 1: install and configure the necessary dependencies
-Default
- Sudo apt-get install openssh-server
-
- Sudo apt-get install postfix
- - Bước 2: download the omnibus package and install everything
-Default
-Wget https://downloads-packages.s3.amazonaws.com/ubuntu-12.04/gitlab_7.9.2-omnibus-1_amd64.deb
-
-Sudo dpkg –i gitlab_7.9.2-omnibus-1_amd63.deb
-- Bước 3: configure start gitlab
-Default
-Sudo gitlab-ctl reconfigure
-- Bước 4: browse to the hostname and login
-Default
-Username: root
-
-Password: 5iveL!fe
