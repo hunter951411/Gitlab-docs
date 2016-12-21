@@ -13,7 +13,7 @@ Khi bạn kích hoạt xác thực hai yếu tố cho tài khoản của bạn, 
 ```
 Lưu ý: Khi một mã phục hồi đặc biệt đã được sử dụng, nó không thể được sử dụng lại. Bạn vẫn có thể sử dụng mã phục hồi lưu khác tại một thời gian sau đó.
 ```
-##Tạo ra một mã phục hồi mới sử dụng SSH
+###Tạo ra một mã phục hồi mới sử dụng SSH
 
 Đó không phải là cách không phổ biến cho người sử dụng để quên lưu các mã phục hồi khi cho phép xác thực hai yếu tố. Nếu bạn có một khoá SSH thêm vào tài khoản GitLab của bạn, bạn có thể tạo ra một tập mới của mã phục hồi bằng SSH. 
 
@@ -48,6 +48,6 @@ Tiếp theo, đi đến rang đăng nhập GitLab và nhập tên tài khoản c
 Lưu ý: Sau khi đăng nhập, bạn phải ngay lập tức vào trang Profile Setting -> Account to set up two-factor authentication with a new device. (Tài khoản để thiết lập xác thực hai yếu tố với một thiết bị mới.) 
 ```
 
-Hỏi quản trị GitLab để vô hiệu hóa hai yếu tố trên tài khoản của bạn 
+###Hỏi quản trị GitLab để vô hiệu hóa hai yếu tố trên tài khoản của bạn 
 
 Nếu hai phương pháp trên là không thể, bạn có thể yêu cầu quản trị toàn cầu GitLab để vô hiệu hóa xác thực hai yếu tố cho tài khoản của bạn. Xin lưu ý rằng điều này sẽ tạm thời rời khỏi tài khoản của bạn ở trong tình trạng kém an toàn. Bạn nên đăng nhập và kích hoạt xác thực hai yếu tố càng sớm càng tốt sau khi quản trị vô hiệu hóa nó.
