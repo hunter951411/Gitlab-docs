@@ -125,6 +125,7 @@ Các API sử dụng JSON để tuần tự hóa dữ liệu. Bạn không cần
 Các API được thiết kế để trở lại tình trạng mã số khác nhau tùy theo bối cảnh và hành động. Bằng cách này, nếu một yêu cầu dẫn đến một lỗi, người gọi có thể để có được cái nhìn sâu sắc vào những gì đã đi sai. 
 
 Bảng dưới đây đưa ra một cái nhìn tổng quan về cách các hàm API thường cư xử.
+
 |<b>Request type</b>| <b>Description</b>|
 |-------------------|-------------------|
 |`GET`|Truy cập một hoặc nhiều nguồn và trả về kết quả như JSON.|
@@ -133,8 +134,24 @@ Bảng dưới đây đưa ra một cái nhìn tổng quan về cách các hàm 
 |`DELETE`|Được thiết kế để được idempotent, có nghĩa là một yêu cầu đến một tài nguyên vẫn trả về `200 OK` ngay cả khi nó đã bị xóa trước hoặc là không có sẵn. Lý do đằng sau này, đó là người dùng không thực sự quan tâm nếu tài nguyên tồn tại trước hay không.|
 
 Bảng dưới đây cho thấy các mã trả có thể cho yêu cầu API.
+
+|<b>Return values</b>| <b>Description</b>|
+|--------------------|-------------------|
+| `200 OK`| `GET`, `PUT` và `DELETE` yêu cầu thành công, tài nguyên của chính nó được trả về dưới dạng JSON. |
+| `201 Created`| Yêu cầu `POST` đã thành công và tài nguyên được trả về dạng JSON. |
+| `304 Not Modified`| Chỉ ra rằng các nguồn tài nguyên chưa được sửa đổi kể từ khi yêu cầu cuối cùng. |
+| `400 Bad Request`| Một thuộc tính cần thiết của yêu cầu API là mất tích, e. g. , Tiêu đề của một vấn đề không được chấp nhận. |
+| `401 Unauthorized`| Người sử dụng không được chứng thực, một `user token` (mã thông báo người dùng) hợp lệ là bắt buộc. |
+| `403 Forbidden`| Các yêu cầu không được cho phép, e. g. , Người sử dụng không được phép xóa một dự án. |
+| `404 Not Found`| Một nguồn tài nguyên không thể được truy cập, e. g. , Một ID cho một tài nguyên không thể tìm được. |
+| `405 Method Not Allowed`| Các yêu cầu không được hỗ trợ. |
+| `409 Conflict`| Một nguồn mâu thuẫn đã tồn tại, e. g. , Tạo ra một dự án với tên này đã tồn tại. |
+| `422 Unprocessable`| Các thực thể không thể được xử lý. |
+| `500 Server Error`| Trong khi xử lý yêu cầu một cái gì đó đã đi sai server-side. |
+
 <a name="sudo"></a>
 ###5. Sudo
+Tất cả các yêu cầu API hỗ trợ thực hiện một cuộc gọi API như thể bạn là một người dùng khác, cung cấp thẻ riêng của bạn là từ một tài khoản quản trị viên. Bạn cần phải sử dụng các tham số `sudo` hoặc thông qua chuỗi truy vấn hoặc một tiêu đề với một ID/username của người dùng mà bạn muốn thực hiện các hoạt động như. Nếu được thông qua như là một tiêu đề, tên tiêu đề phải được `SUDO` (chữ hoa).
 
 
 <a name="pagination"></a>
