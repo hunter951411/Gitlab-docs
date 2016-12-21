@@ -230,13 +230,27 @@ X-Total: 8
 X-Total-Pages: 3
 ```
 <a name="otherpaginationheaders"></a>
-####6.2. Other pagination headers
+####6.2. Other pagination headers (Số trang tiêu đề khác)
+Số trang bổ sung các tiêu đề cũng được gửi trở lại
 
-
+|<b>Header</b>|<b>Description</b>|
+|-------------|------------------|
+|`X-Total`| Tổng số mục |
+|`X-Total-Pages`| Tổng số trang |
+|`X-Per-Page`| Số lượng các bài mỗi trang |
+|`X-Page`| Chỉ số của trang htại (bắt đầu từ 1)|
+|`X-Next-Page`| Chỉ số trang tiếp theo |
+|`X-Prev-Page`| Chỉ số của trang trước |
 <a name="idvsidd"></a>
 ###7. Id vs Sidd
+Khi bạn làm việc với API, bạn có thể nhận thấy hai lĩnh vực tương tự như API thực thể: `id` và `iid`. Sự khác biệt chính giữa chúng là phạm vi. 
 
+Ví dụ, một vấn đề có thể có `id: 46` và `iid: 5`.
 
+|<b>Parameter</b>|<b>Description</b>|
+|----------------|------------------|
+| `id` | Là duy nhất trên tất cả các vấn đề vsử dụng cho bất kì lời gọi API |
+| `iid` | Duy nhất chỉ là trong phạm vi của một dự án duy nhất. Khi bạn duyệt qua các vấn đề hoặc kết hợp các yêu cầu với giao diện Web, bạn thấy iid |
 <a name="datavalidationanderrorreporting"></a>
 ###8. Data Validation and Error Reporting
 
