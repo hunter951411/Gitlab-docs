@@ -1,5 +1,9 @@
 ##GitLab API
 ###Mục Lục
+- [1. Resources](#resources)
+<ul>
+<li>		[1.1. Internal CI API](#11#internalciapi)</li>
+</ul>
 [1. Resources](#resources)<br>
 [1.1. Internal CI API](#internalciapi)<br>
 [2. Authentication](#authentication)<br>
