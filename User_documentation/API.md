@@ -28,6 +28,10 @@
 <a name="resources"></a>
 ###1. Resources
 
+
+<a name="internalciapi"></a>
+####1.1. Internal CI API
+
 <a name="authentication"></a>
 ###2. Authentication
 
