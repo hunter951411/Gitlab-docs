@@ -154,31 +154,41 @@ Bảng dưới đây cho thấy các mã trả có thể cho yêu cầu API.
 Tất cả các yêu cầu API hỗ trợ thực hiện một cuộc gọi API như thể bạn là một người dùng khác, cung cấp thẻ riêng của bạn là từ một tài khoản quản trị viên. Bạn cần phải sử dụng các tham số `sudo` hoặc thông qua chuỗi truy vấn hoặc một tiêu đề với một ID/username của người dùng mà bạn muốn thực hiện các hoạt động như. Nếu được thông qua như là một tiêu đề, tên tiêu đề phải được `SUDO` (chữ hoa).
 
 Nếu một `private_token` không phải từ quản trị được cung cấp, sau đó một thông báo lỗi sẽ được trả lại với mã trạng thái `403`:
+
 `
 {
   "message": "403 Forbidden - Must be admin to use sudo"
 }
 `
+
 Nếu ID người dùng sudo hoặc tên người dùng không thể được tìm thấy, một thông báo lỗi sẽ được trả lại với mã trạng thái `404`:
+
 `
 {
   "message": "404 Not Found: No user id or username for: <id/username>"
 }
 `
+
 Ví dụ về gọi API hợp lệ và yêu cầu sử dụng cURL với yêu cầu sudo, cung cấp một tên người dùng:
+
 `
 GET /projects?private_token=9koXpg98eAheJpvBs5tK&sudo=username
 `
+
 `
 curl --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" --header "SUDO: username" "https://gitlab.example.com/api/v3/projects"
 `
+
 Ví dụ về gọi API hợp lệ và yêu cầu sử dụng cURL với yêu cầu sudo, cung cấp một ID:
+
 `
 GET /projects?private_token=9koXpg98eAheJpvBs5tK&sudo=23
 `
+
 `
 curl --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" --header "SUDO: 23" "https://gitlab.example.com/api/v3/projects"
 `
+
 <a name="pagination"></a>
 ###6. Pagination (Số trang)
 Đôi khi kết quả trả về sẽ trải dài trên nhiều trang. Khi danh sách các nguồn tài nguyên bạn có thể vượt qua các tham số sau:
@@ -189,13 +199,17 @@ curl --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" --header "SUDO: 23" "https:/
 | `per_page`| Số lượng các mục va sách trong mỗi trang (mặc định: `20`, lớn nhất: `100`)|
 
 Trong ví dụ dưới đây, chúng tôi liệt kê 50 `namespaces` mỗi trang.
+
 `curl --request PUT --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" "https://gitlab.example.com/api/v3/namespaces?per_page=50`
+
 <a name="paginationlinkheader"></a>
 ####6.1. Pagination Link header (Số trang liên kết tiêu đề)
 Tiêu đề liên kết được gửi trở lại với mỗi response. Họ có `rel` đặt prev/next/first/last và có chứa URL có liên quan. Xin vui lòng sử dụng các liên kết này thay vì tạo ra các URL của riêng bạn. 
 
 Trong cURL ví dụ dưới đây, chúng tôi giới hạn đầu ra để 3 bài mỗi trang (per_page = 3) và chúng tôi yêu cầu các trang thứ hai (trang = 2) các ý kiến của các vấn đề với ID `8` trực thuộc các project với ID `8`:
+
 `curl --head --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" https://gitlab.example.com/api/v3/projects/8/issues/8/notes?per_page=3&page=2`
+
 Response sẽ là:
 ```
 HTTP/1.1 200 OK
