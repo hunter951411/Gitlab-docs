@@ -10,7 +10,8 @@ Khi bạn kích hoạt xác thực hai yếu tố cho tài khoản của bạn, 
 
 Đầu tiên, nhập tên tài khoản của bạn (hoặc email) và mật khẩu vào trang đăng nhập GitLab. Khi được nhắc nhở cho một mã hai yếu tố, nhập một trong các mã khôi phục bạn đã lưu trước đó. 
 
-```Lưu ý: Khi một mã phục hồi đặc biệt đã được sử dụng, nó không thể được sử dụng lại. Bạn vẫn có thể sử dụng mã phục hồi lưu khác tại một thời gian sau đó.
+```
+Lưu ý: Khi một mã phục hồi đặc biệt đã được sử dụng, nó không thể được sử dụng lại. Bạn vẫn có thể sử dụng mã phục hồi lưu khác tại một thời gian sau đó.
 ```
 ##Tạo ra một mã phục hồi mới sử dụng SSH
 
@@ -18,11 +19,11 @@ Khi bạn kích hoạt xác thực hai yếu tố cho tài khoản của bạn, 
 
 Chạy câu lệnh $ssh git@gitlab.example.com 2fa_recovery_codes. Bạn sẽ được nhắc nhở để xác nhận rằng bạn muốn tạo ra mã mới. Nếu bạn chọn tiếp tục, bất kỳ mã đã lưu trước đó sẽ bị vô hiệu.
 
+```
 $ ssh git@gitlab.example.com 2fa_recovery_codes
 Are you sure you want to generate new two-factor recovery codes?
 Any existing recovery codes you saved will be invalidated. (yes/no)
 yes
-```
 Your two-factor authentication recovery codes are:
 
 119135e5a3ebce8e
