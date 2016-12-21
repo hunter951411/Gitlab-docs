@@ -75,13 +75,25 @@ Tài liệu cho nguồn API khác nhau có thể được tìm thấy trong các
 <li>Version</li>
 </ul>
 <a name="internalciapi"></a>
-####1.1. Internal CI API ()
+####1.1. Internal CI API (CI API nội bộ)
+Các tài liệu sau đây là dành cho các API CI nội bộ:
+<ul>
+<li>Builds</li>
+<li>Runners</li>
+</ul>
 <a name="authentication"></a>
-###2. Authentication
+###2. Authentication (Xác thực)
+Tất cả các yêu cầu API yêu cầu xác thực thông qua một phiên cookie hoặc token. Có ba loại thẻ có sẵn: private tokens, OAuth 2 tokens, và thẻ truy cập cá nhân. 
 
+Nếu thông tin xác thực không hợp lệ hoặc bỏ qua, một thông báo lỗi sẽ được trả lại với mã trạng thái 401:
+```
+{
+  "message": "401 Unauthorized"
+}
+```
 <a name="privatetokens"></a>
 ####2.1 Private Tokens
-
+Bạn cần phải vượt qua một tham số private_token qua chuỗi truy vấn hoặc tiêu đề. Nếu được thông qua như là một tiêu đề, tên tiêu đề phải được `PRIVATE-TOKEN` (chữ hoa và với một dấu gạch ngang thay vì một gạch dưới). Bạn có thể tìm thấy hoặc thiết lập lại thẻ riêng của bạn trong trang tài khoản của bạn `(/profile/account)`.
 <a name="oauth2tokens"></a>
 ####2.2 OAuth 2 Tokens
 
