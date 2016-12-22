@@ -38,7 +38,7 @@ Khi bạn nhấn <b>Submit</b>, bạn sẽ được cung cấp các ứng dụng
 ###1.3 Ứng dụng OAuth trong khu vực Admin
 <a name="OauthApps"></a>
 
-Mỗi ứng dụng mà bạn được phép sử dụng thông tin GitLab của bạn sẽ được hiển thị trong phần <b>Authorized Applications<b/> phần dưới <b>Profile Settings > Application</b>.
+Mỗi ứng dụng mà bạn được phép sử dụng thông tin GitLab của bạn sẽ được hiển thị trong phần <b>Authorized Applications</b> phần dưới <b>Profile Settings > Application</b>.
 
 ###1.4 Các ứng dụng cấp quyền
 <a name="AuthorizedApps"></a>
