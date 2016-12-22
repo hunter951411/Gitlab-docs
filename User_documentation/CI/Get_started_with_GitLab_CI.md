@@ -10,6 +10,27 @@
 <ul>
 <li>[3.1 Chia sẻ các Runners](#SharedRunners)</li>
 </ul>
-- [4. Quan sát trạng thái pipeline và builds của bạn.](#Seestatus)
+- [4. Quan sát trạng thái pipeline và builds.](#Seestatus)
 - [5. Bật Build emails](#EnableBuildEmails)
 - [6. Ví dụ](#Example)
+
+<a name="QuickStart"></a>
+##1. Bắt đầu nhanh
+<a name="CreateGitlab-ci">
+##2. Tạo một tập tin gitlab-ci.yml
+<a name="Gitlab-CiFile"></a>
+###2.1 Tập tin .gitlab-ci.yml
+<a name="CreateSimpleGitlab-ci"></a>
+###2.2 Tập tin .gitlab-ci.yml đơn giản
+<a name="PushToGitlab"></a>
+###2.3 Đẩy tập tin .gitlab-ci lên Gitlab
+<a name="ConfigRunner"></a>
+##3. Cấu hình một Runner
+<a name="SharedRunners"></a>
+###3.1 Chia sẻ các  Runners
+<a name="Seestatus"></a>
+##4. Quan sát trạng thái pipeline và builds
+<a name="EnableBuildEmails"></a>
+##5. Bật Build Emails
+<a name="Example"></a>
+##6. Ví dụ
