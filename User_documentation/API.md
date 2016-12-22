@@ -37,7 +37,7 @@ Tự động hóa GitLab qua một API đơn giản và mạnh mẽ. Tất cả 
 <li>[Builds](https://docs.gitlab.com/ce/api/builds.html)</li>
 <li>[Build Triggers](https://docs.gitlab.com/ce/api/build_triggers.html)</li>
 <li>[Build Variables](https://docs.gitlab.com/ce/api/build_variables.html)</li>
-<li>[Commits](https://docs.gitlab.com/ce/api/commits.html</li>
+<li>[Commits](https://docs.gitlab.com/ce/api/commits.html)</li>
 <li>[Deployments](https://docs.gitlab.com/ce/api/deployments.html)</li>
 <li>[Deploy Keys](https://docs.gitlab.com/ce/api/deploy_keys.html)</li>
 <li>[Gitignores templates](https://docs.gitlab.com/ce/api/templates/gitignores.html)</li>
