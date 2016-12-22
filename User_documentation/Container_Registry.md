@@ -19,6 +19,7 @@
 <li>[8.2.4. Running the Docker client(Chạy Docker Client)](#DockerClient)</li>
 </ul></li>
 </ul>
+
 <a name="GitLabContainerRegistry"></a>
 ###1. GitLab Container Registry
 <a name="EnableContainerRegistry"></a>
