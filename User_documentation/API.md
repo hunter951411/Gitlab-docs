@@ -99,12 +99,14 @@ Bạn cần phải vượt qua một tham số private_token qua chuỗi truy v�
 Bạn có thể sử dụng mã thông báo OAuth 2 để xác thực với các API bằng cách đi qua nó hoặc trong các tham số access_token hoặc trong Authorization header(tiêu đề ủy quyền). 
 
 Ví dụ về sử dụng thẻ OAuth2 trong tiêu đề:
-`curl --header "Authorization: Bearer OAUTH-TOKEN" https://gitlab.example.com/api/v3/projects`
-
+```
+curl --header "Authorization: Bearer OAUTH-TOKEN" https://gitlab.example.com/api/v3/projects
+```
 <a name="personalaccesstokens"></a>
 ####2.3 Personal Access Tokens
-`Được giới thiệu vào GitLab 8. 8.`
-
+```
+Được giới thiệu vào GitLab 8. 8.
+```
 Bạn có thể tạo nhiều thẻ truy cập cá nhân như bạn muốn từ hồ sơ GitLab của bạn (/profile/personal_access_tokens); có lẽ một cho mỗi ứng dụng cần truy cập vào các API GitLab. 
 
 Một khi bạn có thẻ của bạn, vượt qua nó để các API bằng cách sử dụng các tham số private_token hoặc tiêu đề PRIVATE-TOKEN.
@@ -116,9 +118,13 @@ Khi đăng nhập vào GitLab như một người dùng bình thường, một c
 Yêu cầu API nên được bắt đầu với `api` và phiên bản API. Các phiên bản API được định nghĩa trong lib `/api.rb`. 
 
 Ví dụ về một yêu cầu API hợp lệ:
-`GET https://gitlab.example.com/api/v3/projects?private_token=9koXpg98eAheJpvBs5tK`
+```
+GET https://gitlab.example.com/api/v3/projects?private_token=9koXpg98eAheJpvBs5tK
+```
 Ví dụ về một yêu cầu API giá trị sử dụng cURL và xác thực thông qua tiêu đề:
-`curl --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" "https://gitlab.example.com/api/v3/projects"`
+```
+curl --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" "https://gitlab.example.com/api/v3/projects"
+```
 Các API sử dụng JSON để tuần tự hóa dữ liệu. Bạn không cần phải chỉ định `.json` vào cuối URL API.
 <a name="statuscodes"></a>
 ###4. Status Codes (Mã trạng thái)
@@ -175,19 +181,19 @@ Ví dụ về gọi API hợp lệ và yêu cầu sử dụng cURL với yêu c�
 GET /projects?private_token=9koXpg98eAheJpvBs5tK&sudo=username
 `
 
-`
+```
 curl --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" --header "SUDO: username" "https://gitlab.example.com/api/v3/projects"
-`
+```
 
 Ví dụ về gọi API hợp lệ và yêu cầu sử dụng cURL với yêu cầu sudo, cung cấp một ID:
 
-`
+```
 GET /projects?private_token=9koXpg98eAheJpvBs5tK&sudo=23
-`
+```
 
-`
+```
 curl --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" --header "SUDO: 23" "https://gitlab.example.com/api/v3/projects"
-`
+```
 
 <a name="pagination"></a>
 ###6. Pagination (Số trang)
@@ -200,16 +206,18 @@ curl --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" --header "SUDO: 23" "https:/
 
 Trong ví dụ dưới đây, chúng tôi liệt kê 50 `namespaces` mỗi trang.
 
-`curl --request PUT --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" "https://gitlab.example.com/api/v3/namespaces?per_page=50`
-
+```
+curl --request PUT --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" "https://gitlab.example.com/api/v3/namespaces?per_page=50
+```
 <a name="paginationlinkheader"></a>
 ####6.1. Pagination Link header (Số trang liên kết tiêu đề)
 Tiêu đề liên kết được gửi trở lại với mỗi response. Họ có `rel` đặt prev/next/first/last và có chứa URL có liên quan. Xin vui lòng sử dụng các liên kết này thay vì tạo ra các URL của riêng bạn. 
 
 Trong cURL ví dụ dưới đây, chúng tôi giới hạn đầu ra để 3 bài mỗi trang (per_page = 3) và chúng tôi yêu cầu các trang thứ hai (trang = 2) các ý kiến của các vấn đề với ID `8` trực thuộc các project với ID `8`:
 
-`curl --head --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" https://gitlab.example.com/api/v3/projects/8/issues/8/notes?per_page=3&page=2`
-
+```
+curl --head --header "PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK" https://gitlab.example.com/api/v3/projects/8/issues/8/notes?per_page=3&page=2
+```
 Response sẽ là:
 ```
 HTTP/1.1 200 OK
@@ -252,10 +260,14 @@ Ví dụ, một vấn đề có thể có `id: 46` và `iid: 5`.
 | `id` | Là duy nhất trên tất cả các vấn đề vsử dụng cho bất kì lời gọi API |
 | `iid` | Duy nhất chỉ là trong phạm vi của một dự án duy nhất. Khi bạn duyệt qua các vấn đề hoặc kết hợp các yêu cầu với giao diện Web, bạn thấy iid |
 
-Điều đó có nghĩa rằng nếu bạn muốn nhận được một vấn đề thông qua API, bạn nên sử dụng các 
-`id`:`GET /projects/42/issues/:id`
+Điều đó có nghĩa rằng nếu bạn muốn nhận được một vấn đề thông qua API, bạn nên sử dụng: 
+```
+id`:`GET /projects/42/issues/:id
+```
 Mặt khác, nếu bạn muốn tạo một liên kết đến một trang web, bạn nên sử dụng `iid`:
-`GET /projects/42/issues/:iid`
+```
+GET /projects/42/issues/:iid
+```
 <a name="datavalidationanderrorreporting"></a>
 ###8. Data Validation and Error Reporting (Xác nhận dữ liệu và báo cáo lỗi)
 Khi làm việc với API của bạn có thể gặp phải lỗi xác thực, trong trường hợp đó các API sẽ trả lời với trạng thái HTTP `400`.
@@ -314,4 +326,5 @@ Content-Type: application/json
 <a name="clients"></a>
 ###10. Clients
 Có rất nhiều khách hàng API GitLab không chính thức cho hầu hết các ngôn ngữ lập trình phổ biến. Truy cập vào trang web GitLab cho một danh sách đầy đủ.
+
 Gitlab Website https://about.gitlab.com/applications/#api-clients
