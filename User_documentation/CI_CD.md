@@ -24,4 +24,4 @@
 <li>Git submodules Using Git submodules in your CI jobs</li>
 </ul>
 ##Những thay đổi bứt phá 
-New CI build permissions model Read about what changed in GitLab 8.12 and how that affects your builds. There's a new way to access your Git submodules and LFS objects in builds.
+[New CI build permissions model](https://docs.gitlab.com/ce/user/project/new_ci_build_permissions_model.html) đọc về những thay đổi trong GitLab 8. 12 và các ảnh hưởng đến xây dựng hệ thống của bạn. Có một cách mới để truy cập các môđun con Git của bạn và các đối tượng LFS trong xây dựng.
