@@ -37,8 +37,10 @@ Khi bạn nhấn <b>Submit</b>, bạn sẽ được cung cấp các ứng dụng
 
 ###1.3 Ứng dụng OAuth trong khu vực Admin
 <a name="OauthApps"></a>
+
 Mỗi ứng dụng mà bạn được phép sử dụng thông tin GitLab của bạn sẽ được hiển thị trong phần <b>Authorized Applications</> phần dưới <b>Profile Settings > Application</b>.
 
 ###1.4 Các ứng dụng cấp quyền
 <a name="AuthorizedApps"></a>
+
 Như bạn có thể thấy, phạm vi `api` mặc định được sử dụng, đó là phạm vi chỉ rằng GitLab hỗ trợ cho đến nay. Bất cứ lúc nào bạn có thể thu hồi bất kỳ truy cập bằng cách chỉ cần nhấp vào <b>Revoke</b>.
