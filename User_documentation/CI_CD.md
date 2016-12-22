@@ -1,6 +1,7 @@
 #Tài liệu GitLab CI 
 
 ##Tài liệu người dùng CI
+-
 <ul>
 <li>[Get started with GitLab CI (Bắt đầu với Gitlab CI)]()</li>
 <li>[CI examples for various languages (CI cho các ngôn ngữ khác nhau)]()</li>
