@@ -30,14 +30,14 @@ GitLab hỗ trợ hai cách để thêm một ứng dụng OAuth2 mới cho mộ
 Để thêm một ứng dụng mới thông qua hồ sơ của bạn, điều hướng đến <b>Profile Setting</b> > <b>Applicaitons</b> và chọn <b>New Application</b>.
 
 Trong khung Application, nhập <b>Name</b> (tùy ý), và chắc chắn để thiết lập một cách chính xác các <b>URI Redirect</b> là URL mà người dùng sẽ được gửi sau khi họ ủy quyền với GitLab.
-
+<img src="https://github.com/hunter951411/gitlab/blob/master/images/AddingApps.png">
 Khi bạn nhấn <b>Submit</b>, bạn sẽ được cung cấp các ứng dụng ID và ứng dụng bí mật nơi mà bạn có thể sử dụng với các ứng dụng của bạn kết nối với GitLab.
-
+<img src="https://github.com/hunter951411/gitlab/blob/master/images/SubmitApps.png">
 Để tạo ra một ứng dụng mà không thuộc về một người dùng nhất định, bạn có thể tạo ra nó từ khu vực admin.
 
 ###1.3 Ứng dụng OAuth trong khu vực Admin
 <a name="OauthApps"></a>
-
+<img src="https://github.com/hunter951411/gitlab/blob/master/images/Admin%20Area.png">
 Mỗi ứng dụng mà bạn được phép sử dụng thông tin GitLab của bạn sẽ được hiển thị trong phần <b>Authorized Applications</b> phần dưới <b>Profile Settings > Application</b>.
 
 ###1.4 Các ứng dụng cấp quyền
