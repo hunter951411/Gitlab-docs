@@ -1,7 +1,7 @@
 #Tài liệu GitLab CI 
 
-##Tài liệu người dùng CI
--
+##Tài liệu người dùng CI 
+- Gitlab CI
 <ul>
 <li>[Get started with GitLab CI (Bắt đầu với Gitlab CI)](https://docs.gitlab.com/ce/ci/quick_start/README.html)</li>
 <li>[CI examples for various languages (CI cho các ngôn ngữ khác nhau)](https://docs.gitlab.com/ce/ci/examples/README.html)</li>
