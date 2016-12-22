@@ -251,13 +251,67 @@ Ví dụ, một vấn đề có thể có `id: 46` và `iid: 5`.
 |----------------|------------------|
 | `id` | Là duy nhất trên tất cả các vấn đề vsử dụng cho bất kì lời gọi API |
 | `iid` | Duy nhất chỉ là trong phạm vi của một dự án duy nhất. Khi bạn duyệt qua các vấn đề hoặc kết hợp các yêu cầu với giao diện Web, bạn thấy iid |
+
+Điều đó có nghĩa rằng nếu bạn muốn nhận được một vấn đề thông qua API, bạn nên sử dụng các 
+`id`:`GET /projects/42/issues/:id`
+Mặt khác, nếu bạn muốn tạo một liên kết đến một trang web, bạn nên sử dụng `iid`:
+`GET /projects/42/issues/:iid`
 <a name="datavalidationanderrorreporting"></a>
-###8. Data Validation and Error Reporting
-
-
+###8. Data Validation and Error Reporting (Xác nhận dữ liệu và báo cáo lỗi)
+Khi làm việc với API của bạn có thể gặp phải lỗi xác thực, trong trường hợp đó các API sẽ trả lời với trạng thái HTTP `400`.
+Như vậy lỗi xuất hiện trong hai trường hợp: 
+Một yêu cầu thuộc tính yêu cầu API là mất tích, ví dụ, tiêu đề của một vấn đề không được chấp nhận
+Một thuộc tính đã không vượt qua xác nhận, ví dụ, người dùng đăng nhập lâu 
+Khi một thuộc tính là mất tích, bạn sẽ nhận được một cái gì đó như:
+```
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+{
+    "message":"400 (Bad request) \"title\" not given"
+}
+```
+Khi xảy ra một lỗi xác thực, thông báo lỗi sẽ khác nhau. Họ sẽ giữ tất cả các chi tiết lỗi xác thực:
+```
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+{
+    "message": {
+        "bio": [
+            "is too long (maximum is 255 characters)"
+        ]
+    }
+}
+```
+Điều này làm cho thông báo lỗi machine-readable. Các định dạng có thể được mô tả như sau:
+```
+{
+    "message": {
+        "<property-name>": [
+            "<error-message>",
+            "<error-message>",
+            ...
+        ],
+        "<embed-entity>": {
+            "<property-name>": [
+                "<error-message>",
+                "<error-message>",
+                ...
+            ],
+        }
+    }
+}
+```
 <a name="unknownroute"></a>
-###9. Unkown Route
-
-
+###9. Unkown Route (Không biết đường đi)
+Khi bạn cố gắng truy cập một API URL không tồn tại, bạn sẽ nhận được `404 Not Found`.
+```
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+{
+    "error": "404 Not Found"
+}
+```
 <a name="clients"></a>
 ###10. Clients
+Có rất nhiều khách hàng API GitLab không chính thức cho hầu hết các ngôn ngữ lập trình phổ biến. Truy cập vào trang web GitLab cho một danh sách đầy đủ.
+Gitlab Website https://about.gitlab.com/applications/#api-clients
