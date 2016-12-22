@@ -17,7 +17,7 @@
 <a name="QuickStart"></a>
 ##1. Bắt đầu nhanh
 ```
-<b>Lưu ý:</b> Bắt đầu từ phiên bản 8. 0, GitLab Continuous Integration (CI) được tích hợp đầy đủ vào GitLab và được kích hoạt theo mặc định trên tất cả các dự án.
+Lưu ý: Bắt đầu từ phiên bản 8. 0, GitLab Continuous Integration (CI) được tích hợp đầy đủ vào GitLab và được kích hoạt theo mặc định trên tất cả các dự án.
 ```
 <a name="CreateGitlab-ci">
 ##2. Tạo một tập tin gitlab-ci.yml
