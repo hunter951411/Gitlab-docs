@@ -22,8 +22,25 @@
 
 <a name="GitLabContainerRegistry"></a>
 ###1. GitLab Container Registry
+```
+Giới thiệu trong GitLab 8.8
+```
+```
+Lưu ý:
+Docker Registry hỗ trợ manifest v1 đã được thêm vào trong GitLab 8.9 để hỗ trợ các phiên bản Docker sớm hơn 1.10 
+Tài liệu này là về các hướng dẫn sử dụng. Để tìm hiểu làm thế nào để kích hoạt tính năng GitLab container Registry trên GitLab của bạn, hãy truy cập các tài liệu hướng dẫn quản trị viên. 
+Bắt đầu từ GitLab 8. 12, nếu bạn đã kích hoạt 2FA trong tài khoản của bạn, bạn cần phải vượt qua một truy cập Token cá nhân thay vì mật khẩu của bạn để đăng nhập vào container Registry GitLab.
+```
+Với tích hợp các Docker container Registry vào GitLab, mỗi dự án có thể có không gian riêng của mình để lưu trữ Docker images. 
+
+Bạn có thể đọc thêm về Docker Registry tại https://docs.docker.com/registry/introduction/
+
 <a name="EnableContainerRegistry"></a>
 ###2. Bật Docker Registry cho project của bạn
+Thứ nhất, yêu cầu quản trị hệ thống của bạn để cho phép GitLab container Registry sau đây các tài liệu hành chính. Nếu bạn đang sử dụng GitLab.com, điều này được kích hoạt mặc định, do đó bạn có thể bắt đầu bằng cách sử dụng Registry ngay lập tức. 
+
+Vào cài đặt của dự án của bạn và kích hoạt tính năng container Registry trên dự án của bạn. Đối với dự án mới này có thể được kích hoạt theo mặc định. Đối với dự án có sẵn (trước GitLab 8.8), bạn sẽ phải kích hoạt nó một cách rõ ràng.
+
 <a name="BuildAndPushImages"></a>
 ###3. Tạo và đẩy images
 <a name="UseImages"></a>
