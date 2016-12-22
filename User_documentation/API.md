@@ -32,48 +32,49 @@ Tự động hóa GitLab qua một API đơn giản và mạnh mẽ. Tất cả 
 - Tài liệu cho nguồn API khác nhau có thể được tìm thấy trong các địa điểm sau:
 <ul>
 <li>[Award Emoji](https://docs.gitlab.com/ce/api/award_emoji.html)</li>
-<li>[Branches]()</li>
-<li>[Broadcast Messages]()</li>
-<li>[Builds]()</li>
-<li>[Build Triggers]()</li>
-<li>[Build Variables]()</li>
-<li>[Commits]()</li>
-<li>[Deployments]()</li>
-<li>[Deploy Keys]()</li>
-<li>[Gitignores templates]()</li>
-<li>[GitLab CI Config templates]()</li>
-<li>[Groups]()</li>
-<li>[Group Access Requests]()</li>
-<li>[Group Members]()</li>
-<li>[Issues]()</li>
-<li>[Issue Boards]()</li>
-<li>[Keys]()</li>
-<li>[Labels]()</li>
-<li>[Merge Requests]()</li>
-<li>[Milestones]()</li>
-<li>[Open source license templates]()</li>
-<li>[Namespaces]()</li>
-<li>[Notes (comments)]()</li>
-<li>[Notification settings]()</li>
-<li>[Pipelines]()</li>
-<li>[Projects including setting Webhooks]()</li>
+<li>[Branches](https://docs.gitlab.com/ce/api/branches.html)</li>
+<li>[Broadcast Messages](https://docs.gitlab.com/ce/api/broadcast_messages.html)</li>
+<li>[Builds](https://docs.gitlab.com/ce/api/builds.html)</li>
+<li>[Build Triggers](https://docs.gitlab.com/ce/api/build_triggers.html)</li>
+<li>[Build Variables](https://docs.gitlab.com/ce/api/build_variables.html)</li>
+<li>[Commits](https://docs.gitlab.com/ce/api/commits.html</li>
+<li>[Deployments](https://docs.gitlab.com/ce/api/deployments.html)</li>
+<li>[Deploy Keys](https://docs.gitlab.com/ce/api/deploy_keys.html)</li>
+<li>[Gitignores templates](https://docs.gitlab.com/ce/api/templates/gitignores.html)</li>
+<li>[GitLab CI Config templates](https://docs.gitlab.com/ce/api/templates/gitlab_ci_ymls.html)</li>
+<li>[Groups](https://docs.gitlab.com/ce/api/groups.html)</li>
+<li>[Group Access Requests](https://docs.gitlab.com/ce/api/access_requests.html)</li>
+<li>[Group Members](https://docs.gitlab.com/ce/api/members.html)</li>
+<li>[Issues](https://docs.gitlab.com/ce/api/issues.html)</li>
+<li>[Issue Boards](https://docs.gitlab.com/ce/api/boards.html)</li>
+<li>[Keys](https://docs.gitlab.com/ce/api/keys.html)</li>
+<li>[Labels](https://docs.gitlab.com/ce/api/labels.html)</li>
+<li>[Merge Requests](https://docs.gitlab.com/ce/api/merge_requests.html)</li>
+<li>[Milestones](https://docs.gitlab.com/ce/api/milestones.html)</li>
+<li>[Open source license templates](https://docs.gitlab.com/ce/api/templates/licenses.html)</li>
+<li>[Namespaces](https://docs.gitlab.com/ce/api/namespaces.html)</li>
+<li>[Notes (comments)](https://docs.gitlab.com/ce/api/notes.html)</li>
+<li>[Notification settings](https://docs.gitlab.com/ce/api/notification_settings.html)</li>
+<li>[Pipelines](https://docs.gitlab.com/ce/api/pipelines.html)</li>
+<li>[Projects including setting Webhooks](https://docs.gitlab.com/ce/api/projects.html)</li>
 <li>[Project Access Requests]()</li>
-<li>[Project Members]()</li>
-<li>[Project Snippets]()</li>
-<li>[Repositories]()</li>
-<li>[Repository Files]()</li>
-<li>[Runners]()</li>
-<li>[Services]()</li>
-<li>[Session]()</li>
-<li>[Settings]()</li>
-<li>[Sidekiq metrics]()</li>
-<li>[System Hooks]()</li>
-<li>[Tags]()</li>
-<li>[Todos]()</li>
-<li>[Users]()</li>
-<li>[Validate CI configuration]()</li>
-<li>[Version]()</li>
+<li>[Project Members](https://docs.gitlab.com/ce/api/members.html)</li>
+<li>[Project Snippets](https://docs.gitlab.com/ce/api/project_snippets.html)</li>
+<li>[Repositories](https://docs.gitlab.com/ce/api/repositories.html)</li>
+<li>[Repository Files](https://docs.gitlab.com/ce/api/repository_files.html)</li>
+<li>[Runners](https://docs.gitlab.com/ce/api/runners.html)</li>
+<li>[Services](https://docs.gitlab.com/ce/api/services.html)</li>
+<li>[Session](https://docs.gitlab.com/ce/api/session.html)</li>
+<li>[Settings](https://docs.gitlab.com/ce/api/settings.html)</li>
+<li>[Sidekiq metrics](https://docs.gitlab.com/ce/api/sidekiq_metrics.html)</li>
+<li>[System Hooks](https://docs.gitlab.com/ce/api/system_hooks.html)</li>
+<li>[Tags](https://docs.gitlab.com/ce/api/tags.html)</li>
+<li>[Todos](https://docs.gitlab.com/ce/api/todos.html)</li>
+<li>[Users](https://docs.gitlab.com/ce/api/users.html)</li>
+<li>[Validate CI configuration](https://docs.gitlab.com/ce/api/ci/lint.html)</li>
+<li>[Version](https://docs.gitlab.com/ce/api/version.html)</li>
 </ul>
+
 <a name="internalciapi"></a>
 ####1.1. Internal CI API (CI API nội bộ)
 Các tài liệu sau đây là dành cho các API CI nội bộ:
