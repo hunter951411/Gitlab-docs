@@ -1,6 +1,5 @@
 ##Mục lục
-[1. Bắt đầu nhanh](#Quickstart)
-
+- [1. Bắt đầu nhanh](#Quickstart)
 - [2. Tạo ra một tập tin .gitlab-ci.yml](#CreateGitlab-ci)
 <ul>
 <li>[2.1 Tập tin .gitlab-ci.yml](#Gitlab-CiFile)</li>
@@ -11,6 +10,6 @@
 <ul>
 <li>[3.1 Chia sẻ các Runners](#SharedRunners)</li>
 </ul>
-[4. Quan sát trạng thái pipeline và builds của bạn.](#Seestatus)
-[5. Bật Build emails](#EnableBuildEmails)
-[6. Ví dụ](#Example)
+- [4. Quan sát trạng thái pipeline và builds của bạn.](#Seestatus)
+- [5. Bật Build emails](#EnableBuildEmails)
+- [6. Ví dụ](#Example)
