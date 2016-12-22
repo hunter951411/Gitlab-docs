@@ -115,7 +115,7 @@ Một khi bạn có thẻ của bạn, vượt qua nó để các API bằng cá
 ####2.4 Session Cookie
 Khi đăng nhập vào GitLab như một người dùng bình thường, một cookie _gitlab_session được thiết lập. API sẽ sử dụng cookie này để xác thực nếu nó hiện diện, nhưng bằng cách sử dụng API để tạo ra một cookie phiên làm việc mới hiện chưa được hỗ trợ.
 <a name="basicusage"></a>
-###3. Basic Usage (Sử dụng cơ b)
+###3. Basic Usage (Sử dụng cơ bản)
 Yêu cầu API nên được bắt đầu với `api` và phiên bản API. Các phiên bản API được định nghĩa trong lib `/api.rb`. 
 
 Ví dụ về một yêu cầu API hợp lệ:
