@@ -37,14 +37,14 @@
 <a name="Troubleshooting"></a>
 ###8. Xử lý GitLab Container Registry
 <a name="Basic"></a>
-###8.1. Sửa cơ bản
+####8.1. Sửa cơ bản
 <a name="Advanced"></a>
-###8.2. Sửa nâng cao
+####8.2. Sửa nâng cao
 <a name="Unexpected403"></a>
-###8.2.1. Lỗi 403 trong quá trình push
+####8.2.1. Lỗi 403 trong quá trình push
 <a name="mitmproxy"></a>
-###8.2.2. mitmproxy
+####8.2.2. mitmproxy
 <a name="DockerDaemon"></a>
-###8.2.3. Chạy tiến trình Docker với một proxy
+####8.2.3. Chạy tiến trình Docker với một proxy
 <a name="DockerClient"></a>
-###8.2.4. Chạy Docker Client
+####8.2.4. Chạy Docker Client
