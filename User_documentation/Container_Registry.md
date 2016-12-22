@@ -23,15 +23,15 @@
 <a name="GitLabContainerRegistry"></a>
 ###1. GitLab Container Registry
 <a name="EnableContainerRegistry"></a>
-###2. 
+###2. Bật Docker Registry cho project của bạn
 <a name="BuildAndPushImages"></a>
-###3. 
+###3. Tạo và đẩy images
 <a name="UseImages"></a>
-###4. 
+###4. Sử dụng images từ GitLab Container Registry
 <a name="ControlContainer"></a>
-###5. 
+###5. Điều khiển Container Registry từ GitLab
 <a name="BuildAndPushGitLabCI"></a>
-###6. 
+###6. Tạo và đẩy Images sử dụng GitLab CI
 <a name="Limitations"></a>
 ###7. Hạn chế
 <a name="Troubleshooting"></a>
