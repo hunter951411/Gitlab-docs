@@ -1,5 +1,4 @@
-Authentication and Authorization 
-Xác thực và cấp quyền
+##Xác thực và cấp quyền
 - GitLab tích hợp với các dịch vụ dưới đây để cung cấp xác thực và cấp quyền
 <ul>
 <li>[LDAP](): Bao gồm Active Directory, Apple Open Directory, Open LDAP, và 389 Server</li>
