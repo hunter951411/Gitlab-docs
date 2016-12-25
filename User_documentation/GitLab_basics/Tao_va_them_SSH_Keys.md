@@ -16,5 +16,6 @@
 
 
 ```
-Lưu ý: Khi bạn thêm một key, bạn không thể chỉnh sửa nó, chỉ loại bỏ nó. Trong trường hợp dán không làm việc, bạn sẽ phải loại bỏ các khóa vi phạm và thêm lại.
+Lưu ý: Khi bạn thêm một key, bạn không thể chỉnh sửa nó, chỉ loại bỏ nó. 
+Trong trường hợp dán không làm việc, bạn sẽ phải loại bỏ các khóa vi phạm và thêm lại.
 ```
