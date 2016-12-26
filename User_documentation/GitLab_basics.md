@@ -10,7 +10,7 @@
 <li>[Tạo một nhánh](https://github.com/hunter951411/gitlab/blob/master/User_documentation/GitLab_basics/Tao_mot_nhanh.md)</li>
 <li>[Tách một Project](https://github.com/hunter951411/gitlab/blob/master/User_documentation/GitLab_basics/Tach_mot_Project.md)</li>
 <li>[Thêm một tập tin](https://github.com/hunter951411/gitlab/blob/master/User_documentation/GitLab_basics/Them_mot_tap_tin.md)</li>
-<li>[Thêm một image](https://github.com/hunter951411/gitlab/blob/master/User_documentation/GitLab_basics/Them_mot_image.md)</li>
+<li>[Thêm một image](https://github.com/hunter951411/gitlab/blob/master/User_documentation/GitLab_basics/Cac_lenh_co_ban.md)</li>
 <li>[Tạo một issue](https://github.com/hunter951411/gitlab/blob/master/User_documentation/GitLab_basics/Them_mot_issue.md)</li>
 <li>[Tạo một Merge Request](https://github.com/hunter951411/gitlab/blob/master/User_documentation/GitLab_basics/Tao_mot_Merge_Request.md)</li>
 </ul>
