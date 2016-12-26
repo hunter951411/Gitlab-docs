@@ -2,7 +2,7 @@
 
 Các theo dõi vấn đề là một nơi tốt để thêm những thứ cần phải cải thiện hoặc giải quyết trong một project.
 
-1. Tới các project mà bạn muốn tạo ra issue và điều hướng đến tab `Issuaes` ở trên.
+1. Tới các project mà bạn muốn tạo ra issue và điều hướng đến tab `Issues` ở trên.
 
 2. Nhấn vào nút <b>New issue</b> ở phía bên phải của màn hình.
 
