@@ -13,6 +13,7 @@ Project của bạn trong GitLab có thể được tổ chức theo 2 cách kh�
 Nếu bạn tổ chức các project của bạn theo một nhóm, nó hoạt động như một thư mục. Bạn có thể quản lý quyền thành viên trong nhóm của bạn và truy cập vào các project.
 
 Tạo một nhóm:
+
 1. Mở rộng thanh bên cái bằng cách ấn vào ba dấu gạch ngang ở bên góc trái và sau đó điều hướng đến nhóm.
 
 2. Một bản điều khiển nhóm được hiện ra, click vào <b>New Group</b>
