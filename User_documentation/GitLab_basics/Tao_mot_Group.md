@@ -14,13 +14,21 @@ Nếu bạn tổ chức các project của bạn theo một nhóm, nó hoạt đ
 
 Tạo một nhóm:
 1. Mở rộng thanh bên cái bằng cách ấn vào ba dấu gạch ngang ở bên góc trái và sau đó điều hướng đến nhóm.
+
 2. Một bản điều khiển nhóm được hiện ra, click vào <b>New Group</b>
+
 3. Điền các thông tin cần thiết:
+
 3.1. Thiết lập các "Group path" sẽ là namespace ở dưới, theo đó dự án của bạn sẽ được lưu trữ (path có thể chứa chữ cái, chữ số, gạch dưới, gạch ngang và dấu chấm, nó không thể bắt đầu với dấu gạch ngagn hoặc kết thúc trong đấu . )
+
 3.2. Tùy chọn, bạn có thể thêm một mô tả để những người khác có thể hiểu ngắn gọn về nhóm
+
 3.3. Tùy chọn, chọn avatar cho project của bạn
+
 3.4. Chọn mức hiển thị.
+
 4. Cuối cùng, click và nút <b>Create group</b>
+
 <a name="addnewproject">
 ####1.1. Thêm một project mới vào một group
 
