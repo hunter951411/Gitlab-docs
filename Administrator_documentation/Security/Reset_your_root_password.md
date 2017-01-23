@@ -1,4 +1,5 @@
-###Làm thế nào để thiết lập lại mật khẩu máy user root của bạn.
+#Làm thế nào để thiết lập lại mật khẩu máy user root của bạn.
+
 Đăng nhập vào máy chủ của bạn với quyền root. Sau đó bắt đầu một Ruby on Rails console. 
 Bát đầu giao diện bằng lệnh này:
 ```
