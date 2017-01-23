@@ -1,1 +1,4 @@
+#Độc quyền thông tin
 
+
+Git là một hệ thống kiểm soát phiên bản phân tán(DVCS). Điều này có nghĩa rằng tất cả mọi người làm việc với mã nguồn có một bản sao cục bộ của các kho lưu trữ. Trong GitLab mỗi thành viên dữ án không phải là Guest(mà là reporter, developers và masters) có thể clone kho lưu trữ để có một bản sao ở local. Sau khi có bản sao local này người dùng có thể tải lên đầy đủ các repository ở bất cứ nơi nào, bao gồm cả một dự án khác dưới sự kiểm soát của họ hoặc máy chủ khác. Hậu quả là bạn không thể xây sựng các điều khiển truy cập mà ngăn chặn việc chia sẻ mã nguồn bởi người dùng truy cập vào mã nguofn. Đây là một tính năng vốn có của một DVCS và tất cả các hệ thống quản lý git có giới ạn này. Rõ ràng là bạn có thể thực hiện các bước để ngăn chia sẻ không chủ ý và phá hủy thông tin, đây là lý do tại sao chỉ có một số người được phép mời người khác mà không ai có thể push mộtnhánh proteced.
